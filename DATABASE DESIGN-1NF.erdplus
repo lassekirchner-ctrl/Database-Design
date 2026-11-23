@@ -1,0 +1,716 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+        "type": "Table",
+        "position": {
+          "x": -1015.4082392406654,
+          "y": 603.7814988685482
+        },
+        "data": {
+          "label": "DEPARTMENT",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "106d13b7-4779-40a1-8176-9dc9b4b386cd",
+              "name": "Department ID ",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "1ef0c437-6ff3-4f45-a6fc-d79324e9f711",
+              "name": "Name",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cff1a9ea-63cc-4ed8-9e7e-d3fc3a4ddf8c",
+              "name": "Description",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "02d2e021-5638-48a7-9031-e9b9c5c857af",
+              "name": "fk_DEPARTMENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "586cf4da-53c7-499e-a1e5-93ac87ccff0c",
+                "sourceTableId": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+                "columns": [
+                  {
+                    "id": "fk_106d13b7-4779-40a1-8176-9dc9b4b386cd",
+                    "name": "ParentDep ID (O) ",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 125
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+        "type": "Table",
+        "position": {
+          "x": -1320.073188181363,
+          "y": -125.85753346148884
+        },
+        "data": {
+          "label": "USER",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "3707136d-e393-46cc-8f6e-b9c52294cc7b",
+              "name": "User Name",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "ba0e28e7-f109-4a41-9f49-46151520042f",
+              "name": "SSN",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7b46191e-c6a9-4b95-a7ce-e2edf2cd30c0",
+              "name": "Street",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "98f994d9-adf6-4eba-a5c1-b03845255893",
+              "name": "Zip code",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cbe2b79f-1f44-4989-8c38-38171575d867",
+              "name": "City",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "f5ab1191-82d6-4525-8fcc-cb93bd9b5008",
+              "name": "Country",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "8f405722-427d-4736-99d2-53b740131032",
+              "name": "Email address",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "81f7e361-a1d0-4187-ba99-fe39bea157d8",
+              "name": "Phone nr",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c53d5bb8-66c2-444e-8cb6-19e7fb24f9fd",
+              "name": "Password",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cc648048-c97f-454a-9312-721f1b4c8a25",
+              "name": "Newsletter",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "71dcb824-557e-4686-af2d-418135808d92",
+              "name": "User_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 297
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "8990594c-f049-4951-8229-6359808d7b3e",
+        "type": "Table",
+        "position": {
+          "x": -709.4491678025573,
+          "y": 277.1957128108204
+        },
+        "data": {
+          "label": "PRODUCT",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "a5e516dd-fba2-431a-b216-5d368fd107aa",
+              "name": "Stock quantity",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "a567bc22-4b08-484d-9168-df579e3db358",
+              "name": "Description",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "69ea4166-3578-4978-9048-fa3f6f0bbc7a",
+              "name": "Product name",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+              "name": "Product ID ",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "878c0f9c-9dd8-4314-904d-a35b18b6996c",
+              "name": "Discount",
+              "type": "INT",
+              "isPrimaryKey": false,
+              "isOptional": true
+            },
+            {
+              "id": "f2db2585-2ee3-442d-96ae-88750093a662",
+              "name": "Tax",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "379c0e84-e6c8-4d8a-86b2-93cf5f8ab241",
+              "name": "Original Price ",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cbea0da2-0ea3-458a-996f-9fa96c6a7419",
+              "name": "Featured",
+              "type": "INT",
+              "isPrimaryKey": false,
+              "isOptional": true
+            },
+            {
+              "id": "fk_e9b3917a-6fc0-426b-a43d-f642c1c40b49",
+              "name": "fk_DEPARTMENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "13e71b0f-b050-4d2e-9df3-78ca8743934b",
+                "sourceTableId": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+                "columns": [
+                  {
+                    "id": "fk_106d13b7-4779-40a1-8176-9dc9b4b386cd",
+                    "name": "Department ID ",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 248
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "7cd746ed-bed8-43c1-a47d-e535a87897f6",
+        "type": "Table",
+        "position": {
+          "x": -710.866917385563,
+          "y": -222.53386076345708
+        },
+        "data": {
+          "label": "REVIEW",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "72b57e31-a43f-4b48-9ed6-8fe8356dbdf0",
+              "name": "Comment",
+              "type": "INT",
+              "isPrimaryKey": false,
+              "isOptional": true
+            },
+            {
+              "id": "78b87065-7458-4594-92e8-1fcd984aa541",
+              "name": "Date",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "828868ac-5af0-4f40-bfaa-2c077ad4969d",
+              "name": "Rating",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "1a613a6f-90fd-4adf-a185-3516f7ca8483",
+              "name": "Review ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_02de427b-1a1c-4959-939f-3dc47f9cd81b",
+              "name": "fk_USER",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "440abf35-0016-4737-9a5b-a80649aaaf72",
+                "sourceTableId": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+                "columns": [
+                  {
+                    "id": "fk_71dcb824-557e-4686-af2d-418135808d92",
+                    "name": "User_ID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_82b2b06a-b9e9-47b9-bd2c-40ca2917fa46",
+              "name": "fk_PRODUCT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "3a018dd5-e576-4610-a0f6-cb2af3097b57",
+                "sourceTableId": "8990594c-f049-4951-8229-6359808d7b3e",
+                "columns": [
+                  {
+                    "id": "fk_47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+                    "name": "Product ID ",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 174
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "b45b6649-e37a-4b4d-98d1-89fed009f22f",
+        "type": "Table",
+        "position": {
+          "x": -1320.6890467198289,
+          "y": 239.10198182898293
+        },
+        "data": {
+          "label": "ORDERS",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "c9d23e06-e0a8-438a-ac08-f7fd34c69e9c",
+              "name": "Order ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "59758774-c230-487c-a68c-bd9cea3e7e28",
+              "name": "Date last change",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "19933fd1-cd93-437a-ac9d-b9966db66ce3",
+              "name": "Status ",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "4a5ab002-f6ab-4d44-bf43-05f434c31acf",
+              "name": "Tracking Number",
+              "type": "INT",
+              "isPrimaryKey": false,
+              "isOptional": true
+            },
+            {
+              "id": "7e0eabaa-70aa-49ef-b191-bd0b8dab069b",
+              "name": "Payment reference",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_b125fe0e-8f6d-4b9c-b147-e129b7743b6f",
+              "name": "fk_USER",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "4cb6186a-0eaf-4b81-b7f8-2b0947d4f24c",
+                "sourceTableId": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+                "columns": [
+                  {
+                    "id": "fk_71dcb824-557e-4686-af2d-418135808d92",
+                    "name": "User_ID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 174
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "cdcedba3-201c-4a87-9db1-e8ef908545dd",
+        "type": "Table",
+        "position": {
+          "x": -404.9359574775249,
+          "y": 395.1029254380705
+        },
+        "data": {
+          "label": "ProductKeyword",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "98f3db48-59a7-43b6-b391-1683b44cde05",
+              "name": "Keyword",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "fk_7dd0a8d2-28b6-4c57-ba5f-05cf9409bab2",
+              "name": "fk_PRODUCT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "d0e063a2-905d-4dc3-8d19-7683c7d07576",
+                "sourceTableId": "8990594c-f049-4951-8229-6359808d7b3e",
+                "columns": [
+                  {
+                    "id": "fk_47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+                    "name": "Product ID ",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 75
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "2dc6a954-5edb-4f70-af79-1d623f3b7887",
+        "type": "Table",
+        "position": {
+          "x": -1014,
+          "y": 401.4990234375
+        },
+        "data": {
+          "label": "Contains",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "b2725cf1-edd9-4636-8294-6149322121fe",
+              "name": "Unit price",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "89f6681b-467c-455b-9f1f-282595dc407a",
+              "name": "Quantity",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_68b489f3-f15d-45ea-8400-a54aaf9bddeb",
+              "name": "fk_ORDERS",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "325efa63-cc9b-4eae-8c08-16ddaaed1576",
+                "sourceTableId": "b45b6649-e37a-4b4d-98d1-89fed009f22f",
+                "columns": [
+                  {
+                    "id": "fk_c9d23e06-e0a8-438a-ac08-f7fd34c69e9c",
+                    "name": "Order ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_ef3b25af-35c9-43ae-81f5-cfd95e491bd5",
+              "name": "fk_PRODUCT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "4656fed9-4920-4c3a-a3bb-83d774418f53",
+                "sourceTableId": "8990594c-f049-4951-8229-6359808d7b3e",
+                "columns": [
+                  {
+                    "id": "fk_47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+                    "name": "Product ID ",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 125
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "544c8648-ff08-4aa0-8a91-304cbdf3d633->544c8648-ff08-4aa0-8a91-304cbdf3d633_586cf4da-53c7-499e-a1e5-93ac87ccff0c",
+        "type": "Relational",
+        "source": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+        "targetHandle": "foreign-key-handle-586cf4da-53c7-499e-a1e5-93ac87ccff0c",
+        "target": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "586cf4da-53c7-499e-a1e5-93ac87ccff0c",
+            "sourceTableId": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+            "columns": [
+              {
+                "id": "fk_106d13b7-4779-40a1-8176-9dc9b4b386cd",
+                "name": "Department ID ",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "3a0945b6-e24a-43cd-ac89-ff1410c224c9->b45b6649-e37a-4b4d-98d1-89fed009f22f_4cb6186a-0eaf-4b81-b7f8-2b0947d4f24c",
+        "type": "Relational",
+        "source": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+        "targetHandle": "foreign-key-handle-4cb6186a-0eaf-4b81-b7f8-2b0947d4f24c",
+        "target": "b45b6649-e37a-4b4d-98d1-89fed009f22f",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "4cb6186a-0eaf-4b81-b7f8-2b0947d4f24c",
+            "sourceTableId": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+            "columns": [
+              {
+                "id": "fk_71dcb824-557e-4686-af2d-418135808d92",
+                "name": "User_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "3a0945b6-e24a-43cd-ac89-ff1410c224c9->7cd746ed-bed8-43c1-a47d-e535a87897f6_440abf35-0016-4737-9a5b-a80649aaaf72",
+        "type": "Relational",
+        "source": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+        "targetHandle": "foreign-key-handle-440abf35-0016-4737-9a5b-a80649aaaf72",
+        "target": "7cd746ed-bed8-43c1-a47d-e535a87897f6",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "440abf35-0016-4737-9a5b-a80649aaaf72",
+            "sourceTableId": "3a0945b6-e24a-43cd-ac89-ff1410c224c9",
+            "columns": [
+              {
+                "id": "fk_71dcb824-557e-4686-af2d-418135808d92",
+                "name": "User_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "8990594c-f049-4951-8229-6359808d7b3e->7cd746ed-bed8-43c1-a47d-e535a87897f6_3a018dd5-e576-4610-a0f6-cb2af3097b57",
+        "type": "Relational",
+        "source": "8990594c-f049-4951-8229-6359808d7b3e",
+        "targetHandle": "foreign-key-handle-3a018dd5-e576-4610-a0f6-cb2af3097b57",
+        "target": "7cd746ed-bed8-43c1-a47d-e535a87897f6",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "3a018dd5-e576-4610-a0f6-cb2af3097b57",
+            "sourceTableId": "8990594c-f049-4951-8229-6359808d7b3e",
+            "columns": [
+              {
+                "id": "fk_47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+                "name": "Product ID ",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "544c8648-ff08-4aa0-8a91-304cbdf3d633->8990594c-f049-4951-8229-6359808d7b3e_13e71b0f-b050-4d2e-9df3-78ca8743934b",
+        "type": "Relational",
+        "source": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+        "targetHandle": "foreign-key-handle-13e71b0f-b050-4d2e-9df3-78ca8743934b",
+        "target": "8990594c-f049-4951-8229-6359808d7b3e",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "13e71b0f-b050-4d2e-9df3-78ca8743934b",
+            "sourceTableId": "544c8648-ff08-4aa0-8a91-304cbdf3d633",
+            "columns": [
+              {
+                "id": "fk_106d13b7-4779-40a1-8176-9dc9b4b386cd",
+                "name": "Department ID ",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "8990594c-f049-4951-8229-6359808d7b3e->cdcedba3-201c-4a87-9db1-e8ef908545dd_d0e063a2-905d-4dc3-8d19-7683c7d07576",
+        "type": "Relational",
+        "source": "8990594c-f049-4951-8229-6359808d7b3e",
+        "targetHandle": "foreign-key-handle-d0e063a2-905d-4dc3-8d19-7683c7d07576",
+        "target": "cdcedba3-201c-4a87-9db1-e8ef908545dd",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "d0e063a2-905d-4dc3-8d19-7683c7d07576",
+            "sourceTableId": "8990594c-f049-4951-8229-6359808d7b3e",
+            "columns": [
+              {
+                "id": "fk_47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+                "name": "Product ID ",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "b45b6649-e37a-4b4d-98d1-89fed009f22f->2dc6a954-5edb-4f70-af79-1d623f3b7887_325efa63-cc9b-4eae-8c08-16ddaaed1576",
+        "type": "Relational",
+        "source": "b45b6649-e37a-4b4d-98d1-89fed009f22f",
+        "targetHandle": "foreign-key-handle-325efa63-cc9b-4eae-8c08-16ddaaed1576",
+        "target": "2dc6a954-5edb-4f70-af79-1d623f3b7887",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "325efa63-cc9b-4eae-8c08-16ddaaed1576",
+            "sourceTableId": "b45b6649-e37a-4b4d-98d1-89fed009f22f",
+            "columns": [
+              {
+                "id": "fk_c9d23e06-e0a8-438a-ac08-f7fd34c69e9c",
+                "name": "Order ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "8990594c-f049-4951-8229-6359808d7b3e->2dc6a954-5edb-4f70-af79-1d623f3b7887_4656fed9-4920-4c3a-a3bb-83d774418f53",
+        "type": "Relational",
+        "source": "8990594c-f049-4951-8229-6359808d7b3e",
+        "targetHandle": "foreign-key-handle-4656fed9-4920-4c3a-a3bb-83d774418f53",
+        "target": "2dc6a954-5edb-4f70-af79-1d623f3b7887",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "4656fed9-4920-4c3a-a3bb-83d774418f53",
+            "sourceTableId": "8990594c-f049-4951-8229-6359808d7b3e",
+            "columns": [
+              {
+                "id": "fk_47d6344c-226d-4b8f-83b3-b6cb8823fd0a",
+                "name": "Product ID ",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 855.7056090094665,
+      "y": 165.12680274144844,
+      "zoom": 0.5
+    }
+  },
+  "name": "DATABASE DESIGN-Relational Schema",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 500219
+  },
+  "id": 748496,
+  "updatedAtTimestamp": 1795448225
+}
