@@ -13,4 +13,5 @@ CREATE TABLE Product (
     Featured BOOLEAN DEFAULT FALSE NOT NULL,
     FOREGIN KEY (Departement ID) REFERENCE Departement(Depertement ID)
 );
+
 ##hejhej
