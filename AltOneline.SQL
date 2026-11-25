@@ -11,3 +11,4 @@ CREATE TABLE Product (
     DepartmentID INT NOT NULL REFERENCES Department(DepartmentID)
 );
 
+##hejhej
