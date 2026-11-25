@@ -4,12 +4,6 @@ CREATE TABLE Department (
     ParentID     INT REFERENCES Department(DepartmentID)  -- recursive FK, NULL for roots
 );
 
-CREATE TABLE Product (
-    ProductID    INT PRIMARY KEY,
-    ProductName  VARCHAR(100) NOT NULL,
-    Price        DECIMAL(10,2),
-    DepartmentID INT NOT NULL REFERENCES Department(DepartmentID)
-);
 
 CREATE TABLE Product (
     Product ID INT PRIMARY KEY,
