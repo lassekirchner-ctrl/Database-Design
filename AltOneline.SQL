@@ -14,4 +14,3 @@ CREATE TABLE Product (
     FOREGIN KEY (Departement ID) REFERENCE Departement(Depertement ID)
 );
 
-##hejhej
