@@ -6,11 +6,28 @@ CREATE TABLE Department (
 
 
 CREATE TABLE Product (
-    Product ID INT PRIMARY KEY,
+    ProductID INT PRIMARY KEY,
     Product name VARCHAR(50) NOT NULL,
-    Stock Quantity INT NOT NULL NOT NEGATIVE,
+    StockQuantity INT NOT NULL NOT NEGATIVE,
     Description VARCHAR(200) NOT NULL,
     Featured BOOLEAN DEFAULT FALSE NOT NULL,
-    FOREGIN KEY (Departement ID) REFERENCE Departement(Depertement ID)
+    FOREGIN KEY (DepartementID) REFERENCE Departement(DepertementID)
 );
 
+
+
+CREATE TABLE Review (
+    Review_ID INT PRIMARY KEY,
+    Comment VARCHAR (200),
+    ReviewDate DATE NOT NULL, 
+    Rating INT NOT NULL CHECK (Rating BETWEEN 1 AND 5),
+    UserID REFERENCES AppUser(UserID),
+    ProductID INT NOT NULL References Product(Product ID)
+);
+
+
+CREATE TABLE App_User(
+    Newsletter BOOLEAN DEFAULT FALSE NOT NULL,
+    User,
+    SSN INT NOT NULL,
+)
